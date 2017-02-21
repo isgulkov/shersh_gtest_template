@@ -1,5 +1,5 @@
 enable_testing()
-set(PROJECT_TEST_NAME dz03_test)
+set(PROJECT_TEST_NAME dz_test)
 
 include_directories(${GTEST_INCLUDE_DIRS} ${PROJECT_SOURCE_DIR}/src)
 

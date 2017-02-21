@@ -1,5 +1,5 @@
 file(GLOB SRC_FILES *.?pp)
 
-add_executable(dz03
+add_executable(dz
     ${SRC_FILES}
     )
