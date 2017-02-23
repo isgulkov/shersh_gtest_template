@@ -7,7 +7,7 @@ file(GLOB TEST_SRC_FILES *.cpp)
 file(GLOB PROJ_SRC_CPPS ${PROJECT_SOURCE_DIR}/src/*.?pp)
 file(GLOB PROJ_SRC_HEADERS ${PROJECT_SOURCE_DIR}/src/*.h)
 add_executable(${PROJECT_TEST_NAME} ${TEST_SRC_FILES}
-        # Add all of the project files that are used in tests here, otherwise it won't link
+        ${PROJ_SRC_CPPS}
         ${PROJ_SRC_HEADERS})
 add_dependencies(${PROJECT_TEST_NAME} googletest)
 
