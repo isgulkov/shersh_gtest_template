@@ -3,12 +3,12 @@ project(gtest_builder C CXX)
 include(ExternalProject)
 
 set(GTEST_FORCE_SHARED_CRT ON)
-set(GTEST_DISABLE_PTHREADS OFF)
+set(GTEST_DISABLE_PTHREADS ON)
 
 ExternalProject_Add(googletest
     GIT_REPOSITORY https://github.com/google/googletest.git
     # So that it won't update the googletest project every time you build
-    GIT_TAG d62d6c6556d96dda924382547c54a4b3afedb22c
+    GIT_TAG 51143d5b62521f71020ada4ba1b6b44f3a6749bb
     CMAKE_ARGS -DCMAKE_ARCHIVE_OUTPUT_DIRECTORY_DEBUG:PATH=DebugLibs
     -DCMAKE_ARCHIVE_OUTPUT_DIRECTORY_RELEASE:PATH=ReleaseLibs
     -DCMAKE_CXX_FLAGS=${MSVC_COMPILER_DEFS}
