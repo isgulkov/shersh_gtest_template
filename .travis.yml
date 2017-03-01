@@ -1,7 +1,5 @@
 language: cpp
 
-notifications:
-  email: false
 
 os:
   -linux
