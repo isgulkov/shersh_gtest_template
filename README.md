@@ -1,5 +1,7 @@
 Gulkov repo: [![Build Status](https://travis-ci.org/frnkySila/shersh_gtest_template.svg?branch=master)](https://travis-ci.org/frnkySila/shersh_gtest_template)
+
 Forked Drankov Repo: [![Build Status](https://travis-ci.org/Sammers21/shersh_gtest_template.svg?branch=master)](https://travis-ci.org/Sammers21/shersh_gtest_template)
+
 # Че делать
 
 1. Скинуть все исходники, кроме тестов, в папку `src`
