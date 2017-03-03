@@ -1,0 +1,40 @@
+language: cpp
+
+notifications:
+  email: false
+
+os:
+  -linux
+
+compiler:
+  - clang
+  - gcc
+
+before_install:
+  # g++4.8.1
+  - if [ "$CXX" == "g++" ]; then sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test; fi
+
+  # clang 3.4
+  - if [ "$CXX" == "clang++" ]; then sudo add-apt-repository -y ppa:h-rayflood/llvm; fi
+
+  - sudo apt-get update -qq
+
+install:
+  # g++4.8.1
+  - if [ "$CXX" = "g++" ]; then sudo apt-get install -qq g++-4.8; fi
+  - if [ "$CXX" = "g++" ]; then export CXX="g++-4.8"; fi
+
+  # clang 3.4
+  - if [ "$CXX" == "clang++" ]; then sudo apt-get install --allow-unauthenticated -qq clang-3.4; fi
+  - if [ "$CXX" == "clang++" ]; then export CXX="clang++-3.4"; fi
+
+script: 
+  - $CXX --version
+  - printf "#include <iostream>" > src/sample.cpp
+  - printf "#include <gtest/gtest.h>\n TEST(SMP, saplests1) { int i = 0; ASSERT_EQ(i, 0);}" > test/sample_test.cpp
+  #resolve dependencies
+  - cmake .
+  #build test binary
+  - make dz_test
+  #run binary executable
+  - test/dz_test
