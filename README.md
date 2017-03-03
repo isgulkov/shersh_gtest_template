@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/frnkySila/shersh_gtest_template.svg?branch=master)](https://travis-ci.org/frnkySila/shersh_gtest_template)
 
 # Че делать
 
