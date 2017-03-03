@@ -1,0 +1,13 @@
+# Target labels
+ googletest
+# Source files and their labels
+/home/sammers21/Desktop/shersh_gtest_template/ext/gtest/CMakeFiles/googletest
+/home/sammers21/Desktop/shersh_gtest_template/ext/gtest/CMakeFiles/googletest.rule
+/home/sammers21/Desktop/shersh_gtest_template/ext/gtest/CMakeFiles/googletest-complete.rule
+/home/sammers21/Desktop/shersh_gtest_template/ext/gtest/src/googletest-stamp/googletest-install.rule
+/home/sammers21/Desktop/shersh_gtest_template/ext/gtest/src/googletest-stamp/googletest-mkdir.rule
+/home/sammers21/Desktop/shersh_gtest_template/ext/gtest/src/googletest-stamp/googletest-download.rule
+/home/sammers21/Desktop/shersh_gtest_template/ext/gtest/src/googletest-stamp/googletest-update.rule
+/home/sammers21/Desktop/shersh_gtest_template/ext/gtest/src/googletest-stamp/googletest-patch.rule
+/home/sammers21/Desktop/shersh_gtest_template/ext/gtest/src/googletest-stamp/googletest-configure.rule
+/home/sammers21/Desktop/shersh_gtest_template/ext/gtest/src/googletest-stamp/googletest-build.rule

@@ -28,8 +28,8 @@ install:
 
 script: 
   - $CXX --version
-  - cp ext/sample/sample.cpp src/
-  - cp ext/sample/sample_test.cpp test/
+  - echo "#include <iostream>" src/sample.cpp
+  - echo "#include <gtest/gtest.h>  TEST(SMP, saplests1) { int i = 0; ASSERT_EQ(i, 0);}" test/sample_test.cpp
   #resolve dependencies
   - cmake .
   #build test binary
