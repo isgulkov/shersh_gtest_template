@@ -1,7 +1,6 @@
 #include <gtest/gtest.h>
-#include "sample.h"
 
-TEST(SMP, saplests1)
-{
-
+TEST(SMP, saplests1) {
+    int i = 0;
+    ASSERT_EQ(i, 0);
 }

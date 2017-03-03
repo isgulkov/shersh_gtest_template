@@ -28,4 +28,11 @@ install:
 
 script: 
   - $CXX --version
-  - ./travis_build.sh
+  - cp ext/sample/sample.cpp src/
+  - cp ext/sample/sample_test.cpp test/
+  #resolve dependencies
+  - cmake .
+  #build test binary
+  - make dz_test
+  #run binary executable
+  - test/dz_test
