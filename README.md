@@ -11,11 +11,9 @@
 
 # Как прогнать тесты на Windows
 
-`> cmake .`
+    cmake .
+    make dz_test
+    test\dz_test || > test\dz_test.exe
 
-`> make dz_test`
-
-`> test\dz_test` || `> test\dz_test.exe` 
-
-'#TODO Cделать .bat скрипт для Windows 
+### TODO Cделать .bat скрипт для Windows 
 
